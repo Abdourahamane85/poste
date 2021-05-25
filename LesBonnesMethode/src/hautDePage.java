@@ -27,7 +27,7 @@ public class hautDePage {
 
 		
 		//driver.navigate().back();
-		driver.navigate().forward();
+		//driver.navigate().forward();
 		
 }
 	
@@ -64,7 +64,7 @@ public class hautDePage {
 		}
 	}
 	*/
-	public void TestSignIn (WebDriver driver) {
+	/*public void TestSignIn (WebDriver driver) {
 		
 		WebElement lienSignIn = driver.findElement(By.xpath("//A[@role='link'][text()='Sign In / Register']"));
 
@@ -146,6 +146,7 @@ public class hautDePage {
 			System.out.println("on ne peut pas utilier le lien ");
 		}
 	}
+	*/
 }
 
 

@@ -17,7 +17,7 @@ public class principalClassPoste {
 			       hautDePage instanceHautDePage = new hautDePage();
 			       instanceHautDePage.testHautDePage(driver);
 			        
-			        hautDePage ContactUs = new hautDePage();
+			        /*hautDePage ContactUs = new hautDePage();
 			        ContactUs.testContactUs(driver);
 			       
 			  
@@ -40,9 +40,12 @@ public class principalClassPoste {
 			        
 			        // Milieu de Page
 			        
-			        /*milieuDePage instanceMilieuDePage = new milieuDePage ();
-			     	instanceMilieuDePage.testmilieuDePage(driver);
-			           */
+			       //ilieuDePage imageMilieuDePage = new milieuDePage ();
+			       //mageMilieuDePage.TestImagemilieuDePage(driver);
+			        
+			        //milieuDePage Carnet10TimbresCRF = new milieuDePage ();
+			        //Carnet10TimbresCRF.TestCarnet10TimbresCRF(driver);
+			        
 			    // driver.close();
 	}
 	
