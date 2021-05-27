@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 
 public class milieuDePage {
 	
-	commun ObjetCommun = new commun() ;
+	Commun ObjetCommun = new Commun() ;
 	
 	public void TestImagemilieuDePage (WebDriver driver ){
 		
@@ -35,4 +35,7 @@ public class milieuDePage {
 		}
 		
 	}
+	
+
 }
+

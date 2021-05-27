@@ -5,33 +5,36 @@ public class principalClassPoste {
 	
 	static WebDriver driver ;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 				System.setProperty("webdriver.chrome.driver","C:\\Users\\Abdou Rahmane\\Documents\\chromedriver.exe");
 				 driver  = new ChromeDriver();
 
 			        driver.manage().window().maximize();
+			       Commun instanceCommun = new Commun();
+			       driver.get(instanceCommun.UrlPoste);
 			        
-			        driver.get("https://jsapps.c4a0pho0ft-laposteaz1-s1-public.model-t.cc.commerce.ondemand.com/");
+			       
 			        // Haut de page
 			       hautDePage instanceHautDePage = new hautDePage();
+			       
 			       instanceHautDePage.testHautDePage(driver);
 			        
-			        /*hautDePage ContactUs = new hautDePage();
-			        ContactUs.testContactUs(driver);
+			      
+			        instanceHautDePage.testContactUs(driver);
+			        
+			        instanceHautDePage.TestHelp(driver);
 			       
-			  
-			      // hautDePage Help = new hautDePage();
-			      // Help.TestHelp(driver);
+			       // instanceHautDePage.TestSignIn(driver);
+			        
+			       // instanceHautDePage.TestPanner(driver);
 			       
-			       hautDePage SignIn = new hautDePage();
-			       SignIn.TestSignIn(driver);
-			       
-			       hautDePage Pannier = new hautDePage();
-			       Pannier.TestPanner(driver);
-			       
-			       hautDePage Brands = new hautDePage();
-			      Brands.TestBrands(driver);		   
+			        //instanceHautDePage.TestBrands(driver);	
+			        
+			        //instanceHautDePage.TestDigitalCameras(driver);
+			        
+			        //instanceHautDePage.TestFilmCameras(driver);
+			        
 			        // Bas de page
 			        
 			       /* basDePages instanceBasDePages = new basDePages();
@@ -46,7 +49,7 @@ public class principalClassPoste {
 			        //milieuDePage Carnet10TimbresCRF = new milieuDePage ();
 			        //Carnet10TimbresCRF.TestCarnet10TimbresCRF(driver);
 			        
-			    // driver.close();
+			     driver.close();
 	}
 	
 }

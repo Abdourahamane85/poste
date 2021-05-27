@@ -1,6 +1,8 @@
 import org.openqa.selenium.WebElement;
 
-public class commun {
+public class Commun {
+	
+	public String UrlPoste = "https://jsapps.c4a0pho0ft-laposteaz1-s1-public.model-t.cc.commerce.ondemand.com/";
 
 	public void VerificationAffichageElement (WebElement monElement) {
 		
