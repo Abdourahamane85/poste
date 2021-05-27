@@ -1,7 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class hautDePage {
 	//WebDriver driver = new ChromeDriver ();
@@ -28,7 +28,7 @@ public class hautDePage {
 		Thread.sleep(2000);
 		
 		driver.navigate().back();
-		//driver.navigate().forward();
+	
 		
 }
 	
@@ -77,7 +77,7 @@ public class hautDePage {
 		driver.navigate().back();
 	}
 	
-	/*public void TestSignIn (WebDriver driver) throws InterruptedException {
+	public void TestSignIn (WebDriver driver) throws InterruptedException {
 		
 		WebElement lienSignIn = driver.findElement(By.xpath("//a[@role='link'][text()='Sign In / Register']"));
 
@@ -177,7 +177,7 @@ public class hautDePage {
 		}
 	}
 	
-*/
+
 	
 }
 

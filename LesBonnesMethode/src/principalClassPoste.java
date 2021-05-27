@@ -16,14 +16,14 @@ public class principalClassPoste {
 			        
 			       
 			        // Haut de page
-			       hautDePage instanceHautDePage = new hautDePage();
+			       //hautDePage instanceHautDePage = new hautDePage();
 			       
-			       instanceHautDePage.testHautDePage(driver);
+			      // instanceHautDePage.testHautDePage(driver);
 			        
 			      
-			        instanceHautDePage.testContactUs(driver);
+			        //instanceHautDePage.testContactUs(driver);
 			        
-			        instanceHautDePage.TestHelp(driver);
+			        //instanceHautDePage.TestHelp(driver);
 			       
 			       // instanceHautDePage.TestSignIn(driver);
 			        
@@ -37,19 +37,21 @@ public class principalClassPoste {
 			        
 			        // Bas de page
 			        
-			       /* basDePages instanceBasDePages = new basDePages();
-			        instanceBasDePages.testBasDePage(driver);
-			        */
+			  
+			       basDePage instanceBasDePage = new basDePage();
+			       instanceBasDePage.testBasDePage(driver);
 			        
 			        // Milieu de Page
+			       
+			      // milieuDePage instanceMilieuDePage = new milieuDePage();
+			       
+			       //instanceMilieuDePage.TestImageMilieuDePage(driver);
+			       
+			       //instanceMilieuDePage.TestCarnet10TimbresCRF(driver);
+			       
+			      
 			        
-			       //ilieuDePage imageMilieuDePage = new milieuDePage ();
-			       //mageMilieuDePage.TestImagemilieuDePage(driver);
-			        
-			        //milieuDePage Carnet10TimbresCRF = new milieuDePage ();
-			        //Carnet10TimbresCRF.TestCarnet10TimbresCRF(driver);
-			        
-			     driver.close();
+			     //driver.close();
 	}
 	
 }

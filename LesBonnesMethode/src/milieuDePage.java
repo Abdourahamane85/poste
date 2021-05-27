@@ -6,9 +6,9 @@ public class milieuDePage {
 	
 	Commun ObjetCommun = new Commun() ;
 	
-	public void TestImagemilieuDePage (WebDriver driver ){
+	public void TestImageMilieuDePage (WebDriver driver ) throws InterruptedException{
 		
-		WebElement imageMilieuDePage = driver.findElement(By.xpath("//IMG[@src='https://api.c4a0pho0ft-laposteaz1-s1-public.model-t.cc.commerce.ondemand.com/medias/sys_master/images/h77/h92/8796134899742/Lpel_1440x440_Homme_banner/Lpel-1440x440-Homme-banner.jpeg']")) ;
+		WebElement imageMilieuDePage = driver.findElement(By.xpath("//IMG[@src='https://api.c4a0pho0ft-laposteaz1-s1-public.model-t.cc.commerce.ondemand.com/medias/sys_master/images/h1f/h49/8796721578014/Lpel_1440x440_Homme_banner/Lpel-1440x440-Homme-banner.jpeg']")) ;
 		
 		ObjetCommun.VerificationAffichageElement(imageMilieuDePage);
 		
@@ -19,11 +19,17 @@ public class milieuDePage {
 		else {
 			System.out.println("L'image n'est pas presente");
 		}
+		
+         Thread.sleep(2000);
+		
+		driver.navigate().back();
+	
+		
 	}
 	
 	public void TestCarnet10TimbresCRF (WebDriver driver ) {
 		
-		WebElement Carnet10TimbresCRF = driver.findElement(By.xpath("// cx-media[@class='is-initialized']"));
+		WebElement Carnet10TimbresCRF = driver.findElement(By.xpath("//H4[text()=' Carnet 10 timbres - La Croix Rouge Française - C215 - Lettre Verte ']"));
 		ObjetCommun.VerificationAffichageElement(Carnet10TimbresCRF);
 		
 		if (ObjetCommun.VerificationBeforeUseElement(Carnet10TimbresCRF)) {
